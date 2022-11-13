@@ -9,10 +9,20 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "BaseAnimationExporter",
+"class": "APNGAnimationExporter",
+"language": "GDScript",
+"path": "res://src/Classes/AnimationExporters/APNGAnimationExporter.gd"
+}, {
 "base": "Reference",
 "class": "AnimationTag",
 "language": "GDScript",
 "path": "res://src/Classes/AnimationTag.gd"
+}, {
+"base": "Reference",
+"class": "BaseAnimationExporter",
+"language": "GDScript",
+"path": "res://src/Classes/AnimationExporters/BaseAnimationExporter.gd"
 }, {
 "base": "Reference",
 "class": "BaseCel",
@@ -49,6 +59,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Classes/Frame.gd"
 }, {
+"base": "BaseAnimationExporter",
+"class": "GIFAnimationExporter",
+"language": "GDScript",
+"path": "res://src/Classes/AnimationExporters/GIFAnimationExporter.gd"
+}, {
 "base": "Control",
 "class": "GradientEditNode",
 "language": "GDScript",
@@ -69,7 +84,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/UI/Canvas/Rulers/Guide.gd"
 }, {
-"base": "AcceptDialog",
+"base": "ConfirmationDialog",
 "class": "ImageEffect",
 "language": "GDScript",
 "path": "res://src/Classes/ImageEffect.gd"
@@ -124,6 +139,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/Classes/Project.gd"
 }, {
+"base": "Sprite",
+"class": "ReferenceImage",
+"language": "GDScript",
+"path": "res://src/UI/Canvas/ReferenceImage.gd"
+}, {
+"base": "VBoxContainer",
+"class": "ReferencesPanel",
+"language": "GDScript",
+"path": "res://src/UI/ReferencesPanel.gd"
+}, {
 "base": "Image",
 "class": "SelectionMap",
 "language": "GDScript",
@@ -160,7 +185,9 @@ _global_script_classes=[ {
 "path": "res://src/UI/Nodes/ValueSlider.gd"
 } ]
 _global_script_class_icons={
+"APNGAnimationExporter": "",
 "AnimationTag": "",
+"BaseAnimationExporter": "",
 "BaseCel": "",
 "BaseLayer": "",
 "BaseTool": "",
@@ -168,6 +195,7 @@ _global_script_class_icons={
 "Canvas": "",
 "Drawer": "",
 "Frame": "",
+"GIFAnimationExporter": "",
 "GradientEditNode": "",
 "GroupCel": "",
 "GroupLayer": "",
@@ -183,6 +211,8 @@ _global_script_class_icons={
 "PixelCel": "",
 "PixelLayer": "",
 "Project": "",
+"ReferenceImage": "",
+"ReferencesPanel": "",
 "SelectionMap": "",
 "SelectionTool": "",
 "ShaderImageEffect": "",
